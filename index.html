@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Form Validation</title>
-    <link rel="stylesheet" href="Responsive Form Validation.css">
+    <link rel="stylesheet" href="css/Responsive Form Validation.css">
 </head>
 <body>
-    
-    <form class="form" id="signupForm">
-        <h2>Create Account</h2>
+
+    <div class="container">
+        <form class="form" id="signupForm">
+            <h2>Create Account</h2>
 
         <div class="form-group">
             <label>Username</label>
@@ -26,6 +27,9 @@
         <div class="form-group">
             <label>Password</label>
             <input type="password" id="password" placeholder="Enter password">
+            <div class="strength-meter">
+            <span id="strengthText"></span>
+            </div>
             <small>Error message</small>
         </div>
 
@@ -35,8 +39,13 @@
             <small>Error message</small>
         </div>
 
-        <button type="submit">Register</button>
+        <button type="submit" id="submitBtn" disabled>Register</button>
     </form>
-    <script src="Responsive Form Validation.js"></script>
+
+    <footer class="footer">
+        <p>&copy; Made by ByteFix Tech. All rights reserved.</p>
+    </footer>
+    </div>
+    <script src="javascript/Responsive Form Validation.js"></script>
 </body>
 </html>

@@ -12,6 +12,12 @@ body {
   margin: 0;
 }
 
+.container {
+  width: 100%;
+  padding: 50px;
+  max-width: 480px;
+}
+
 form {
   background: #fff;
   padding: 20px;
@@ -27,6 +33,7 @@ form {
 }
 
 .form-group {
+  text-align: left;
   margin-bottom: 15px;
 }
 
@@ -37,37 +44,11 @@ label {
   color: #333;
 }
 
-/* input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  box-sizing: border-box;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-input.valid {
-  border-color: #28a745;
-}
-
-input.invalid {
-  border-color: #dc3545;
-} */
-
-label {
+/* label {
   font-size: 14px;
   display: block;
   margin-bottom: 5px;
-}
+} */
 
 input {
   width: 100%;
@@ -98,6 +79,29 @@ small {
   visibility: visible;
 }
 
+.strength-meter {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.strength-weak {
+  color: #dc3545;
+}
+
+.strength-medium {
+  color: #ffc107;
+}
+
+.strength-strong {
+  color: #28a745;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
 button {
   width: 100%;
   padding: 10px;
@@ -114,8 +118,19 @@ button:hover {
   background: #0056b3;
 }
 
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+}
+
+.footer p {
+  margin: 0;
+}
+
 /* Mobile Responsive */
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   form {
     padding: 15px;
   }
